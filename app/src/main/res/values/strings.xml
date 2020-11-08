@@ -18,5 +18,18 @@
     <!-- Messages Preferences -->
     <string name="name_title">Όνομα</string>
     <string name="address_title">Διεύθυνση</string>
+    <string name="_1">1.</string>
+    <string name="reason1">Μετακίνηση για λόγους υγείας</string>
+    <string name="_2">2.</string>
+    <string name="reason2">Μετάβαση σε κατάστημα προμηθειών</string>
+    <string name="_3">3.</string>
+    <string name="reason3">Μετάβαση σε δημόσια υπηρεσία και τράπεζα</string>
+    <string name="_4">4.</string>
+    <string name="reason4">Μετακίνηση για παροχή βοήθειας</string>
+    <string name="_5">5.</string>
+    <string name="reason5">Μετάβαση σε κηδεία</string>
+    <string name="_6">6.</string>
+    <string name="reason6">Σωματική άσκηση</string>
+    <string name="set_settings_warning">Ορίστε τα προσωπικά σας στοιχεία στις ρυθμίσεις</string>
 
 </resources>
