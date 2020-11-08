@@ -18,6 +18,7 @@
         />
 
     <LinearLayout
+        android:id="@+id/layout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/color_background"
@@ -52,6 +53,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/layout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/color_background"
@@ -79,6 +81,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/layout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/color_background"
@@ -106,6 +109,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/layout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/color_background"
@@ -134,6 +138,7 @@
 
 
     <LinearLayout
+        android:id="@+id/layout5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/color_background"
@@ -162,6 +167,7 @@
 
 
     <LinearLayout
+        android:id="@+id/layout6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/color_background"

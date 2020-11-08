@@ -31,5 +31,7 @@
     <string name="_6">6.</string>
     <string name="reason6">Σωματική άσκηση</string>
     <string name="set_settings_warning">Ορίστε τα προσωπικά σας στοιχεία στις ρυθμίσεις</string>
+    <string name="pref_name">name</string>
+    <string name="pref_addr">address</string>
 
 </resources>

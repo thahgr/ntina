@@ -3,11 +3,11 @@
     <PreferenceCategory app:title="@string/messages_header">
 
         <EditTextPreference
-            app:key="name"
+            app:key="@string/pref_name"
             app:title="@string/name_title"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
-            app:key="address"
+            app:key="@string/pref_addr"
             app:title="@string/address_title"
             app:useSimpleSummaryProvider="true" />
 
