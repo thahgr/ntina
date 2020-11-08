@@ -15,7 +15,6 @@ import androidx.preference.PreferenceManager
  */
 class FirstFragment : Fragment() {
 
-    private var settings_set: Boolean = true
     private lateinit var warning:TextView
 
     override fun onCreateView(
@@ -26,6 +25,8 @@ class FirstFragment : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_first, container, false)
 
+        val listener = ItemListener(requireContext())
+
         warning = view.findViewById(R.id.set_settings)
         val l1: LinearLayout = view.findViewById(R.id.layout1)
         val l2: LinearLayout = view.findViewById(R.id.layout2)
@@ -34,18 +35,20 @@ class FirstFragment : Fragment() {
         val l5: LinearLayout = view.findViewById(R.id.layout5)
         val l6: LinearLayout = view.findViewById(R.id.layout6)
 
+        l1.setOnClickListener(listener)
+        l2.setOnClickListener(listener)
+        l3.setOnClickListener(listener)
+        l4.setOnClickListener(listener)
+        l5.setOnClickListener(listener)
+        l6.setOnClickListener(listener)
+
         return view
     }
 
     override fun onResume() {
         super.onResume()
-        val pm  = PreferenceManager.getDefaultSharedPreferences(requireContext())
-        val prefName = pm.getString(getString(R.string.pref_name),"")
-        val prefAddr = pm.getString(getString(R.string.pref_addr),"")
 
-        settings_set = !(TextUtils.isEmpty(prefName) || TextUtils.isEmpty(prefAddr))
-
-        if (settings_set){
+        if (Utils.isSettingsSet(requireContext())){
             warning.visibility = View.GONE
         } else {
             warning.visibility = View.VISIBLE
