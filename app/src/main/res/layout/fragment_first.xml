@@ -1,197 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/set_settings"
+    <ScrollView
+        android:id="@+id/scrollView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="8dp"
-        android:textColor="@color/design_default_color_error"
-        android:textStyle="bold"
-        android:text="@string/set_settings_warning"
-        />
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/layout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/color_background"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="@dimen/bottommargin"
-        android:padding="@dimen/padding_item"
-        >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-        <TextView
-            android:id="@+id/code1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/code_size"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:textColor="@color/color_white"
-            android:layout_gravity="center_vertical"
-            android:text="@string/_1"
-            />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/reason1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="8dp"
-            android:textSize="@dimen/reason_size"
-            android:textColor="@color/color_white"
-            android:text="@string/reason1"
-            />
+            <TextView
+                android:id="@+id/set_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/set_settings_warning"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="@dimen/bottommargin"
+                android:background="@color/color_background"
+                android:padding="@dimen/padding_item">
 
-    <LinearLayout
-        android:id="@+id/layout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/color_background"
-        android:layout_marginBottom="@dimen/bottommargin"
-        android:padding="@dimen/padding_item">
-        <TextView
-            android:id="@+id/code2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/code_size"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:textColor="@color/color_white"
-            android:text="@string/_2"/>
-        <TextView
-            android:id="@+id/reason2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="8dp"
-            android:textSize="@dimen/reason_size"
-            android:textColor="@color/color_white"
-            android:text="@string/reason2"/>
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/code1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/_1"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/code_size" />
 
-    <LinearLayout
-        android:id="@+id/layout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/color_background"
-        android:layout_marginBottom="@dimen/bottommargin"
-        android:padding="@dimen/padding_item">
-        <TextView
-            android:id="@+id/code3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/code_size"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:textColor="@color/color_white"
-            android:text="@string/_3"/>
-        <TextView
-            android:id="@+id/reason3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="8dp"
-            android:textSize="@dimen/reason_size"
-            android:textColor="@color/color_white"
-            android:text="@string/reason3"/>
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/reason1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/reason1"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/reason_size" />
 
-    <LinearLayout
-        android:id="@+id/layout4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/color_background"
-        android:layout_marginBottom="@dimen/bottommargin"
-        android:padding="@dimen/padding_item">
-        <TextView
-            android:id="@+id/code4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/code_size"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:textColor="@color/color_white"
-            android:text="@string/_4"/>
-        <TextView
-            android:id="@+id/reason4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="8dp"
-            android:textSize="@dimen/reason_size"
-            android:textColor="@color/color_white"
-            android:text="@string/reason4"/>
-    </LinearLayout>
+            </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottommargin"
+                android:background="@color/color_background"
+                android:padding="@dimen/padding_item">
 
-    <LinearLayout
-        android:id="@+id/layout5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/color_background"
-        android:layout_marginBottom="@dimen/bottommargin"
-        android:padding="@dimen/padding_item">
-        <TextView
-            android:id="@+id/code5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/code_size"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:textColor="@color/color_white"
-            android:text="@string/_5"/>
-        <TextView
-            android:id="@+id/reason5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="8dp"
-            android:textSize="@dimen/reason_size"
-            android:textColor="@color/color_white"
-            android:text="@string/reason5"/>
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/code2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/_2"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/code_size" />
+
+                <TextView
+                    android:id="@+id/reason2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/reason2"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/reason_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottommargin"
+                android:background="@color/color_background"
+                android:padding="@dimen/padding_item">
+
+                <TextView
+                    android:id="@+id/code3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/_3"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/code_size" />
+
+                <TextView
+                    android:id="@+id/reason3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/reason3"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/reason_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottommargin"
+                android:background="@color/color_background"
+                android:padding="@dimen/padding_item">
+
+                <TextView
+                    android:id="@+id/code4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/_4"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/code_size" />
+
+                <TextView
+                    android:id="@+id/reason4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/reason4"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/reason_size" />
+            </LinearLayout>
 
 
-    <LinearLayout
-        android:id="@+id/layout6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/color_background"
-        android:layout_marginBottom="@dimen/bottommargin"
-        android:padding="@dimen/padding_item">
-        <TextView
-            android:id="@+id/code6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/code_size"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:textColor="@color/color_white"
-            android:text="@string/_6"/>
-        <TextView
-            android:id="@+id/reason6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="8dp"
-            android:textSize="@dimen/reason_size"
-            android:textColor="@color/color_white"
-            android:text="@string/reason6"/>
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottommargin"
+                android:background="@color/color_background"
+                android:padding="@dimen/padding_item">
 
-</LinearLayout>
+                <TextView
+                    android:id="@+id/code5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/_5"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/code_size" />
+
+                <TextView
+                    android:id="@+id/reason5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/reason5"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/reason_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottommargin"
+                android:background="@color/color_background"
+                android:padding="@dimen/padding_item">
+
+                <TextView
+                    android:id="@+id/code6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/_6"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/code_size" />
+
+                <TextView
+                    android:id="@+id/reason6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/reason6"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/reason_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
