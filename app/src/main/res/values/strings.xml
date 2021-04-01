@@ -30,11 +30,15 @@
     <string name="reason5">Μετάβαση σε κηδεία</string>
     <string name="_6">6.</string>
     <string name="reason6">Σωματική άσκηση</string>
+    <string name="reasonShop">Μετακίνηση σε εμπορικό κατάστημα</string>
+    <string name="shopMessage">Μετακίνηση</string>
     <string name="set_settings_warning">Ορίστε τα προσωπικά σας στοιχεία στις ρυθμίσεις</string>
     <string name="pref_name">name</string>
     <string name="pref_addr">address</string>
     <string name="toast_set_credentials">Ορίστε τα προσωπικά σας στοιχεία</string>
     <string name="yes">Ναι</string>
     <string name="cancel">Άκυρο</string>
+    <string name="alert_shop">Αποστολή μηνύματος μετακίνησης σε εμπορικό κατάστημα</string>
+    <string name="alert_code">Αποστολή κωδικού</string>
 
 </resources>

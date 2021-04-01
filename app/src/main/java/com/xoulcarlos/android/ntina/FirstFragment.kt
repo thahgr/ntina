@@ -32,6 +32,7 @@ class FirstFragment : Fragment() {
         val l4: LinearLayout = view.findViewById(R.id.layout4)
         val l5: LinearLayout = view.findViewById(R.id.layout5)
         val l6: LinearLayout = view.findViewById(R.id.layout6)
+        val lShop: LinearLayout = view.findViewById(R.id.layoutShop)
 
         l1.setOnClickListener(listener)
         l2.setOnClickListener(listener)
@@ -39,6 +40,7 @@ class FirstFragment : Fragment() {
         l4.setOnClickListener(listener)
         l5.setOnClickListener(listener)
         l6.setOnClickListener(listener)
+        lShop.setOnClickListener(listener)
 
         return view
     }
