@@ -43,9 +43,9 @@ class ItemListener(_context: Context) : View.OnClickListener {
             R.id.layoutShop -> code = codeShop
         }
 
-        if (code in 1..6) {
-            if (Utils.isSettingsSet(context)) {
 
+        if (Utils.isSettingsSet(context)) {
+            if (code in 1..6) {
                 AlertDialog.Builder(context)
                     .setTitle(R.string.app_name)
                     .setMessage(context.getString(R.string.alert_code) + "$code")
@@ -55,24 +55,24 @@ class ItemListener(_context: Context) : View.OnClickListener {
                         sendSms(context, code)
                     }.setNegativeButton(context.getString(R.string.cancel), null)
                     .show()
-
             } else {
-                Toast.makeText(
-                    context,
-                    context.getString(R.string.toast_set_credentials),
-                    Toast.LENGTH_LONG
-                ).show()
+                AlertDialog.Builder(context)
+                    .setTitle(R.string.app_name)
+                    .setMessage(context.getString(R.string.alert_shop))
+                    .setPositiveButton(
+                        context.getString(R.string.yes)
+                    ) { _, _ ->
+                        sendSmsShop(context)
+                    }.setNegativeButton(context.getString(R.string.cancel), null)
+                    .show()
             }
+
         } else {
-            AlertDialog.Builder(context)
-                .setTitle(R.string.app_name)
-                .setMessage(context.getString(R.string.alert_shop))
-                .setPositiveButton(
-                    context.getString(R.string.yes)
-                ) { _, _ ->
-                    sendSmsShop(context)
-                }.setNegativeButton(context.getString(R.string.cancel), null)
-                .show()
+            Toast.makeText(
+                context,
+                context.getString(R.string.toast_set_credentials),
+                Toast.LENGTH_LONG
+            ).show()
         }
 
     }
@@ -89,9 +89,12 @@ class ItemListener(_context: Context) : View.OnClickListener {
     }
 
     private fun sendSmsShop(context: Context) {
+        val pm = PreferenceManager.getDefaultSharedPreferences(context)
+        val prefName = pm.getString(context.getString(R.string.pref_name), "")
+        val prefAddr = pm.getString(context.getString(R.string.pref_addr), "")
 
         val uri: Uri = Uri.parse("smsto:13032")
-        val body = context.getString(R.string.shopMessage)
+        val body = "$prefName $prefAddr"
 
         actualSendSms(uri, body, context)
     }
