@@ -48,7 +48,7 @@ class ItemListener(_context: Context) : View.OnClickListener {
             if (code in 1..6) {
                 AlertDialog.Builder(context)
                     .setTitle(R.string.app_name)
-                    .setMessage(context.getString(R.string.alert_code) + "$code")
+                    .setMessage(context.getString(R.string.alert_code) + " $code")
                     .setPositiveButton(
                         context.getString(R.string.yes)
                     ) { _, _ ->
